@@ -1,0 +1,35 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+client.on("ready", () => {
+  console.log("Jam-Bot Online");
+});
+const prefix = "=";
+client.on("message", (message) => {
+  if (!message.content.startsWith(prefix)) return;
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  if (message.content.startsWith(prefix + "alert")) {
+    let members = message.channel.members;
+    let jam = members.find('id', '289523788822085632');
+    let gold = members.find('id', '332611268085153792');
+    let spig = members.find('id', '275642801545281536');
+    let celery = members.find('id', '204664162729590793');
+    jam.send('Alert! A user needs you.');
+    gold.send('Alert! A user needs you.');
+    celery.send('Alert! A user needs you.');
+    spig.send('Alert! A user needs you.');
+    console.log("Admin Alert!");
+    message.channel.send("An admin has been alerted.");	
+  }else
+  if (message.content.startsWith(prefix + "ping")) {
+    message.channel.send("Pong!");
+    console.log("Pinged");
+	}else
+  if (message.content.startsWith("xd")) {
+    message.channel.send("stop");
+	}else
+  if (message.content.startsWith(prefix + "playthesong")) {
+    message.channel.send(";;play country roads");
+    setTimeout(message.channel.send(";;play country roads"), 3000);
+    
+});
+client.login(process.env.BOT_TOKEN);
