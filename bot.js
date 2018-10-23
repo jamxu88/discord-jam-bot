@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
-  client.user.setActivity("say =help for help", { type: "PLAYING"})
+  client.user.setActivity("say =help for help", { type: "PLAYING"});
 });
 const prefix = "=";
 client.on("message", (message) => {
