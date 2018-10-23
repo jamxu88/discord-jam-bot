@@ -2,6 +2,12 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
+  client.user.setPresence({
+    game: { 
+        name: '=help',
+        type: 'PLAYING'
+    },
+    status: 'online'
 });
 const prefix = "=";
 client.on("message", (message) => {
@@ -19,7 +25,7 @@ client.on("message", (message) => {
     spig.send('Alert! A user needs you.');
     console.log("Admin Alert!");
     message.channel.send("An admin has been alerted.");
-    client.channels.get("471805062222446604").send("User ${member} has used the =alert command.")
+    client.channels.get("471805062222446604").send("User " + message.author + " has used the =alert command.")
   }else
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("Pong!");
