@@ -2,12 +2,6 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
-  client.user.setPresence({
-    game: { 
-        name: '=help',
-        type: 'PLAYING'
-    },
-    status: 'online'
 });
 const prefix = "=";
 client.on("message", (message) => {
