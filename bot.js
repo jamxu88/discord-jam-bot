@@ -25,7 +25,8 @@ client.on("message", (message) => {
     spig.send('Alert! A user needs you.');
     console.log("Admin Alert!");
     message.channel.send("An admin has been alerted.");
-    client.channels.get("471805062222446604").send("User " + message.author + " has used the =alert command.")
+    message.author.send("Your Alert has been Sent");
+    client.channels.get("471805062222446604").send("User " + message.author.toString() + ", has used the =alert command.");
   }else
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("Pong!");
