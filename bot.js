@@ -23,13 +23,13 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("Pong!");
     console.log("Pinged");
-	}else
+  }else
   if (message.content.startsWith(prefix + "help")) {
-    message.channel.send("Commands: `=alert`, `=ping`, `=help`,`=owner`,");
-	}else
+    message.channel.send("Commands: `=alert`, `=ping`, `=help`,`=owner`");
+  }else
   if (message.content.startsWith(prefix + "owner")) {
     message.channel.send("This bot was created by jam#3515");
-  	}
+  }
   }
 });
 client.login(process.env.BOT_TOKEN);
