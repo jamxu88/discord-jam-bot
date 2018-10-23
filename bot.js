@@ -18,7 +18,8 @@ client.on("message", (message) => {
     celery.send('Alert! A user needs you.');
     spig.send('Alert! A user needs you.');
     console.log("Admin Alert!");
-    message.channel.send("An admin has been alerted.");	
+    message.channel.send("An admin has been alerted.");
+    client.channels.get("471805062222446604").send("User ${member} has used the =alert command.")
   }else
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("Pong!");
@@ -29,7 +30,6 @@ client.on("message", (message) => {
   }else
   if (message.content.startsWith(prefix + "owner")) {
     message.channel.send("This bot was created by jam#3515");
-  }
   }
 });
 client.login(process.env.BOT_TOKEN);
