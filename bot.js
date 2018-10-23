@@ -20,14 +20,20 @@ client.on("message", (message) => {
     console.log("Admin Alert!");
     message.channel.send("An admin has been alerted.");
     message.author.send("Your Alert has been Sent");
-    client.channels.get("471805062222446604").send("User " + message.author.toString() + ", has used the =alert command.");
+    client.channels.get("471805062222446604").send({embed: {
+      color: 3447003,
+      description: "User " + message.author.toString() + ", has used the =alert command."
+    }});
   }else
   if (message.content.startsWith(prefix + "ping")) {
     message.channel.send("Pong!");
     console.log("Pinged");
   }else
   if (message.content.startsWith(prefix + "help")) {
-    message.channel.send("Commands: `=alert`, `=ping`, `=help`,`=owner`");
+    message.channel.send({embed: {
+      color: 3447003,
+      description: "Commands: `=alert`, `=ping`, `=help`,`=owner`"
+    }});
   }else
   if (message.content.startsWith(prefix + "owner")) {
     message.channel.send("This bot was created by jam#3515");
