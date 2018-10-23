@@ -24,12 +24,12 @@ client.on("message", (message) => {
     message.channel.send("Pong!");
     console.log("Pinged");
 	}else
-  if (message.content.startsWith("xd")) {
-    message.channel.send("stop");
+  if (message.content.startsWith(prefix + "help")) {
+    message.channel.send("Commands: `=alert`, `=ping`, `=help`,`=owner`,");
 	}else
-  if (message.content.startsWith(prefix + "playthesong")) {
-    message.channel.send(";;play country roads");
-    setTimeout(message.channel.send(";;play country roads"), 3000);
+  if (message.content.startsWith(prefix + "owner")) {
+    message.channel.send("This bot was created by jam#3515");
+  	}
   }
 });
 client.login(process.env.BOT_TOKEN);
