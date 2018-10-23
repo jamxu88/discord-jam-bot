@@ -30,6 +30,6 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "playthesong")) {
     message.channel.send(";;play country roads");
     setTimeout(message.channel.send(";;play country roads"), 3000);
-    
+  }
 });
 client.login(process.env.BOT_TOKEN);
