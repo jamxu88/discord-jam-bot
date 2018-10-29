@@ -32,7 +32,7 @@ client.on("message", (message) => {
   if (message.content.startsWith(prefix + "help")) {
     message.channel.send({embed: {
       color: 3447003,
-      description: "Commands: `=alert`, `=ping`, `=help`,`=owner`"
+      description: "Commands: `=alert`, `=ping`, `=help`,`=owner`, `=blank`, `=clear`, `=advertising`, `=freemoney`, `=jam`, `=steam`, `=curator`"
     }});
   }else
   if (message.content.startsWith(prefix + "owner")) {
@@ -43,6 +43,27 @@ client.on("message", (message) => {
     message.channel.send("i think");
     message.channel.send("but are you?");
     message.channel.send("yes");
+  }else
+  if (message.content.startsWith(prefix + "blank")) {
+    message.channel.send("_ _");
+  }else
+  if (message.content.startsWith(prefix + "clear")) {
+    message.channel.send("yeah jam doesn't know how to do that just yet");
+  }else
+  if (message.content.startsWith(prefix + "advertising")) {
+    message.channel.send("https://discord.gg/48axjnP");
+  }else
+  if (message.content.startsWith(prefix + "freemoney")) {
+    message.channel.send("https://www.idle-empire.com/r/discord");
+  }else
+  if (message.content.startsWith(prefix + "jam")) {
+    message.channel.send("https://steamcommunity.com/id/jaaaaaaaam");
+  }else
+  if (message.content.startsWith(prefix + "steam")) {
+    message.channel.send("https://steamcommunity.com/groups/VS2T");
+  }else
+  if (message.content.startsWith(prefix + "curator")) {
+    message.channel.send("https://store.steampowered.com/curator/31900195/");
   }
 });
 client.login(process.env.BOT_TOKEN);
