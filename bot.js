@@ -40,6 +40,9 @@ client.on("message", (message) => {
   }else
   if (message.content.startsWith(prefix + "gay?")) {
     message.channel.send("yes");
+    message.channel.send("i think");
+    message.channel.send("but are you?");
+    message.channel.send("yes");
   }
 });
 client.login(process.env.BOT_TOKEN);
