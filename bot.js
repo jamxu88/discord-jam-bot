@@ -6,7 +6,7 @@ client.on("ready", () => {
 });
 const prefix = "=";
 client.on("message", (message) => {
-if (x == 10) {
+if (x == 200) {
   message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vs2tgaming/> \n `Twitter` - <https://twitter.com/VS2T_Gaming> \n `Steam Group` - <https://steamcommunity.com/groups/VS2T> \n `Steam Curator` - <https://store.steampowered.com/curator/31900195/> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
   x = 0
 }else
@@ -52,9 +52,6 @@ if (x == 10) {
     }else
     if (message.content.startsWith(prefix + "clear")) {
       message.channel.send("yeah jam doesn't know how to do that just yet");
-    }
-    if (message.content.startsWith(prefix + "num")) {
-      message.channel.send(x);
     }else
     if (message.content.startsWith(prefix + "info")) {
       message.channel.send("**Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vs2tgaming/> \n `Twitter` - <https://twitter.com/VS2T_Gaming> \n `Steam Group` - <https://steamcommunity.com/groups/VS2T> \n `Steam Curator` - <https://store.steampowered.com/curator/31900195/> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
