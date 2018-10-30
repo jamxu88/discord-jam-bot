@@ -27,7 +27,7 @@ client.on("message", (message) => {
     }});
   }else
   if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("Pong!");
+    message.channel.send("Pong! This bot is on version 42.");
     console.log("Pinged");
   }else
   if (message.content.startsWith(prefix + "help")) {
