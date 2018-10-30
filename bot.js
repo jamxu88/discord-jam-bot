@@ -32,13 +32,13 @@ if (x == 200) {
       }});
     }else
     if (message.content.startsWith(prefix + "ping")) {
-      message.channel.send("Pong! This bot is on version 55.");
+      message.channel.send("Pong! This bot is on version `5.1`.");
       console.log("Pinged");
     }else
     if (message.content.startsWith(prefix + "help")) {
       message.channel.send({embed: {
         color: 3447003,
-        description: "Commands: `=alert`: Alert an admin \n `=ping`: Check the status of the bot \n `=help`: This menu \n `=owner`: The creator of the bot \n `=clear`: Clear the bot messages \n `=info`: Get VS2T Gaming's Info \n `=version`: Developer Tools"
+        description: "Commands: `=alert`: Alert an admin \n `=ping`: Check the status of the bot \n `=help`: This menu \n `=owner`: The creator of the bot \n `=clear`: Clear the bot messages \n `=info`: Get VS2T Gaming's Info \n `=version`: Developer Tools / Log"
       }});
     }else
     if (message.content.startsWith(prefix + "owner")) {
@@ -56,7 +56,9 @@ if (x == 200) {
       message.channel.send("**Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vs2tgaming/> \n `Twitter` - <https://twitter.com/VS2T_Gaming> \n `Steam Group` - <https://steamcommunity.com/groups/VS2T> \n `Steam Curator` - <https://store.steampowered.com/curator/31900195/> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
     }else
     if (message.content.startsWith(prefix + "version")) {
-      message.channel.send("V.55"x);
+      message.channel.send("This bot is on Version 5.1");
+      message.channel.send("x = " + x + ".");
+      message.channel.send("Recent: Bugfixes, info box added- every 200 messages will post the `=info` box. `=version` added to help developers.");
     }
   });
 client.login(process.env.BOT_TOKEN);
