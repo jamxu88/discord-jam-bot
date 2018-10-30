@@ -38,7 +38,7 @@ if (x == 200) {
     if (message.content.startsWith(prefix + "help")) {
       message.channel.send({embed: {
         color: 3447003,
-        description: "Commands: `=alert`: Alert an admin \n `=ping`: Check the status of the bot \n `=help`: This menu \n `=owner`: The creator of the bot \n `=clear`: Clear the bot messages \n `=info`: Get VS2T Gaming's Info \n `=version`: Developer Tools / Log"
+        description: "Commands: `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log"
       }});
     }else
     if (message.content.startsWith(prefix + "owner")) {
@@ -59,7 +59,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `5.2`. x is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 3447003,
-        description: "**Recent Changes**: \n Bugfixes \n Info box added- every 200 messages will post the `=info` box. \n The command `=version` added to help developers. \n Edited the `=version` command."
+        description: "**Recent Changes**: \n \n Bugfixes \n \n Info box added- every 200 messages will post the `=info` box. \n \n The command `=version` added to help developers. \n \n Edited the `=version` command. \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds"
       }});
     }
   });
