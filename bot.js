@@ -38,7 +38,7 @@ if (x == 200) {
     if (message.content.startsWith(prefix + "help")) {
       message.channel.send({embed: {
         color: 3447003,
-        description: "Commands: `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log"
+        description: "**Commands:** \n \n `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log"
       }});
     }else
     if (message.content.startsWith(prefix + "owner")) {
