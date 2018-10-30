@@ -32,7 +32,7 @@ if (x == 200) {
       }});
     }else
     if (message.content.startsWith(prefix + "ping")) {
-      message.channel.send("Pong! This bot is on version 44.");
+      message.channel.send("Pong! This bot is on version 50.");
       console.log("Pinged");
     }else
     if (message.content.startsWith(prefix + "help")) {
