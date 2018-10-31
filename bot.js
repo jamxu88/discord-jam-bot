@@ -64,6 +64,8 @@ if (x == 200) {
     }else
     if (message.content.startsWith(prefix + "github")) {
       message.channel.send("<https://github.com/jamxu88/discord-jam-bot>");
-    }
+    }else
+    if (message.content.startsWith("@")) {
+      message.channel.send("https://cdn.discordapp.com/attachments/504819047443988501/507014385198170112/WhoPingedMe.gif");
   });
 client.login(process.env.BOT_TOKEN);
