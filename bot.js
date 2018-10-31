@@ -32,7 +32,7 @@ if (x == 200) {
       }});
     }else
     if (message.content.startsWith(prefix + "ping")) {
-      message.channel.send("Pong! This bot is on version `5.4`.");
+      message.channel.send("Pong! This bot is on version `5.5`.");
       console.log("Pinged");
     }else
     if (message.content.startsWith(prefix + "help")) {
@@ -56,10 +56,10 @@ if (x == 200) {
       message.channel.send("**Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vs2tgaming/> \n `Twitter` - <https://twitter.com/VS2T_Gaming> \n `Steam Group` - <https://steamcommunity.com/groups/VS2T> \n `Steam Curator` - <https://store.steampowered.com/curator/31900195/> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
     }else
     if (message.content.startsWith(prefix + "version")) {
-      message.channel.send("This bot is on Version `5.4`. `x` is equal to `" + x + "`");
+      message.channel.send("This bot is on Version `5.5`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 3447003,
-        description: "**Recent Changes**: \n \n Bugfixes \n \n Info box added- every 200 messages will post the `=info` box. \n \n The command `=version` added to help developers. \n \n Edited the `=version` command. \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n `redeployed for v64`"
+        description: "**Recent Changes**: \n \n Bugfixes \n \n Info box added- every 200 messages will post the `=info` box. \n \n The command `=version` added to help developers. \n \n Edited the `=version` command. \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n `redeployed for v66`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
@@ -67,5 +67,6 @@ if (x == 200) {
     }else
     if (message.content.startsWith("@")) {
       message.channel.send("https://cdn.discordapp.com/attachments/504819047443988501/507014385198170112/WhoPingedMe.gif");
+    }
   });
 client.login(process.env.BOT_TOKEN);
