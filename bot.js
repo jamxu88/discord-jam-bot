@@ -27,17 +27,17 @@ if (x == 200) {
       message.channel.send("An admin has been alerted.");
       message.author.send("Your Alert has been Sent");
       client.channels.get("471805062222446604").send({embed: {
-        color: 3447003,
+        color: 16777215,
         description: "User " + message.author.toString() + ", has used the =alert command."
       }});
     }else
     if (message.content.startsWith(prefix + "ping")) {
-      message.channel.send("Pong! This bot is on version `5.5`.");
+      message.channel.send("Pong! This bot is on version `5.6`.");
       console.log("Pinged");
     }else
     if (message.content.startsWith(prefix + "help")) {
       message.channel.send({embed: {
-        color: 3447003,
+        color: 16777215,
         description: "**Commands:** \n \n `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log \n \n `=github`: This bot's source code"
       }});
     }else
@@ -56,17 +56,17 @@ if (x == 200) {
       message.channel.send("**Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vs2tgaming/> \n `Twitter` - <https://twitter.com/VS2T_Gaming> \n `Steam Group` - <https://steamcommunity.com/groups/VS2T> \n `Steam Curator` - <https://store.steampowered.com/curator/31900195/> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
     }else
     if (message.content.startsWith(prefix + "version")) {
-      message.channel.send("This bot is on Version `5.5`. `x` is equal to `" + x + "`");
+      message.channel.send("This bot is on Version `5.6`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
-        color: 3447003,
-        description: "**Recent Changes**: \n \n Bugfixes \n \n Info box added- every 200 messages will post the `=info` box. \n \n The command `=version` added to help developers. \n \n Edited the `=version` command. \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n `redeployed for v66`"
+        color: 16777215,
+        description: "**Recent Changes**: \n \n Bugfixes \n \n Changed embed colors to white. \n \n The command `=version` added to help developers. \n \n Edited the `=version` command. \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v67`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
       message.channel.send("<https://github.com/jamxu88/discord-jam-bot>");
     }else
-    if (message.content.startsWith("@")) {
-      message.channel.send("https://cdn.discordapp.com/attachments/504819047443988501/507014385198170112/WhoPingedMe.gif");
+    if (message.content.startsWith(prefix + "supersecretcommand")) {
+      message.channel.send(":thinking:");
     }
   });
 client.login(process.env.BOT_TOKEN);
