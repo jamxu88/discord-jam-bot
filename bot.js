@@ -3,8 +3,8 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 5.7
-  d = 69
+  v = 5.8
+  d = 71
 });
 const prefix = "=";
 client.on("message", (message) => {
@@ -62,7 +62,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Edited the `=version` command. \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
