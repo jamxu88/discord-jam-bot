@@ -13,6 +13,7 @@ if (x == 200) {
   x = 0
 }else
   x = x + 1
+  message.react("🤔")
   if (!message.content.startsWith(prefix)) return;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
     if (message.content.startsWith(prefix + "alert")) {
