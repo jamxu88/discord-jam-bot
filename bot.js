@@ -4,7 +4,7 @@ client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
   v = 5.9
-  d = 73
+  d = 74
 });
 const prefix = "=";
 client.on("message", (message) => {
@@ -13,7 +13,7 @@ if (x == 200) {
   x = 0
 }else
   x = x + 1
-  if (x % 3 == 0) {
+  if (x % 10 == 0) {
     message.react("🤔")
   }else
   if (!message.content.startsWith(prefix)) return;
@@ -64,7 +64,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
