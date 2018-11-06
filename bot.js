@@ -81,4 +81,4 @@ if (x == 200) {
       jam.send('Possible Ad Request- https://goo.gl/pfGACN');
     }
   });
-client.login("NTA2OTQ1NTYxOTM3NTc1OTM5.DsIHBw.E-FUFwIEvv8z2atadpJ8N6xYWJA");
+client.login(process.env.BOT_TOKEN);
