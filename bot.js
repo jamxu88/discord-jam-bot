@@ -2,14 +2,14 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
-  x = 0
+  x = 201
   v = 5.9
   d = 75
 });
 const prefix = "=";
 client.on("message", (message) => {
 if (x == 200) {
-  message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n "**Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
+  message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
   x = 0
 }else
   x = x + 1
@@ -43,7 +43,7 @@ if (x == 200) {
     if (message.content.startsWith(prefix + "help")) {
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Commands:** \n \n `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log \n \n `=github`: This bot's source code"
+        description: "**Commands:** \n \n `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log \n \n `=github`: This bot's source code \n \n `=ad`: #DiscordAds Ad Request"
       }});
     }else
     if (message.content.startsWith(prefix + "owner")) {
@@ -64,7 +64,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Edited the line spacing in embeds. \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
@@ -72,6 +72,13 @@ if (x == 200) {
     }else
     if (message.content.startsWith(prefix + "supersecretcommand")) {
       message.channel.send(":thinking:");
+    }else
+    if (message.content.startsWith(prefix + "ad")) {
+      message.channel.send("#DiscordAds is a paid advertising service where we use bots to send Direct Message advertisements to users. These ads are non-intrusive and the user is able to opt out of receiving ads at any time. Fill out the form to request advertising- https://goo.gl/pfGACN");
+      console.log("Ad-Request Made")
+      let members = message.channel.members;
+      let jam = members.find('id', '289523788822085632');
+      jam.send('Possible Ad Request- https://goo.gl/pfGACN');
     }
   });
-client.login(process.env.BOT_TOKEN);
+client.login("NTA2OTQ1NTYxOTM3NTc1OTM5.DsIHBw.E-FUFwIEvv8z2atadpJ8N6xYWJA");
