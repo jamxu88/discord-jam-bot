@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
-  x = 201
-  v = 5.9
-  d = 75
+  x = 0
+  v = 6
+  d = 79
 });
 const prefix = "=";
 client.on("message", (message) => {
