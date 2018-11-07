@@ -3,8 +3,8 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 6.1
-  d = 80
+  v = 6.1.1
+  d = 81
 });
 const prefix = "=";
 client.on("message", (message) => {
@@ -67,7 +67,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Jam became more competent in coding \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
@@ -82,7 +82,8 @@ if (x == 200) {
       let members = message.channel.members;
       let jam = members.find('id', '289523788822085632');
       jam.send('Possible Ad Request- https://goo.gl/pfGACN');
-    }if (message.content.startsWith(".")) {
+    }else
+    if (message.content.startsWith(".")) {
     setTimeout(react, 500);
     message.react("🔼")
   }
