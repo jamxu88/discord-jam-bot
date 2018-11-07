@@ -3,11 +3,14 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 6
-  d = 79
+  v = 6.1
+  d = 80
 });
 const prefix = "=";
 client.on("message", (message) => {
+function react() {
+  message.react("🔽")
+}
 if (x == 200) {
   message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
   x = 0
@@ -43,7 +46,7 @@ if (x == 200) {
     if (message.content.startsWith(prefix + "help")) {
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Commands:** \n \n `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log \n \n `=github`: This bot's source code \n \n `=ad`: #DiscordAds Ad Request"
+        description: "**Commands:** \n \n `=alert`: Alert an admin \n \n `=ping`: Check the status of the bot \n \n `=help`: This menu \n \n `=owner`: The creator of the bot \n \n `=clear`: Clear the bot messages \n \n `=info`: Get VS2T Gaming's Info \n \n `=version`: Developer Tools / Log \n \n `=github`: This bot's source code \n \n `=ad`: #DiscordAds Ad Request \n \n Start any message with `.` to add the rating system to your message."
       }});
     }else
     if (message.content.startsWith(prefix + "owner")) {
@@ -64,7 +67,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Heroku added to partner list. \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Added `=github` command. \n \n Added a super secret command \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
@@ -79,6 +82,9 @@ if (x == 200) {
       let members = message.channel.members;
       let jam = members.find('id', '289523788822085632');
       jam.send('Possible Ad Request- https://goo.gl/pfGACN');
-    }
+    }if (message.content.startsWith(".")) {
+    setTimeout(react, 500);
+    message.react("🔼")
+  }
   });
 client.login(process.env.BOT_TOKEN);
