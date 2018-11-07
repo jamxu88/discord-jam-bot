@@ -3,8 +3,8 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 6.1
-  d = 82
+  v = 6.2
+  d = 83
 });
 const prefix = "=";
 client.on("message", (message) => {
@@ -16,8 +16,12 @@ if (x == 200) {
   x = 0
 }else
   x = x + 1
-  if (x % 10 == 0) {
+  if (x % 23 == 0) {
     message.react("🤔")
+  }else
+  if (message.content.startsWith(".")) {
+    setTimeout(react, 500);
+    message.react("🔼")
   }else
   if (!message.content.startsWith(prefix)) return;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -82,10 +86,6 @@ if (x == 200) {
       let members = message.channel.members;
       let jam = members.find('id', '289523788822085632');
       jam.send('Possible Ad Request- https://goo.gl/pfGACN');
-    }else
-    if (message.content.startsWith(".")) {
-    setTimeout(react, 500);
-    message.react("🔼")
-  }
+    }
   });
 client.login(process.env.BOT_TOKEN);
