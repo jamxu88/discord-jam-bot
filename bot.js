@@ -3,8 +3,8 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 6.1.1
-  d = 81
+  v = 6.1
+  d = 82
 });
 const prefix = "=";
 client.on("message", (message) => {
