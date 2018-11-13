@@ -3,7 +3,7 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 6.2
+  v = 6.3
   d = 84
 });
 const prefix = "=";
@@ -17,7 +17,7 @@ if (x == 200) {
 }else
   x = x + 1
   if (x % 23 == 0) {
-    message.react("🤔")
+    message.react("💎")
   }else
   if (message.content.startsWith(".")) {
     setTimeout(react, 500);
@@ -71,7 +71,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Fixed a Version/Deployment Bug \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Jam became more competent in coding \n \n Made presence rarer \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Changed the Presence \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Jam became more competent in coding \n \n Made presence rarer \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
