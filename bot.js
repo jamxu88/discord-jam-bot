@@ -4,7 +4,7 @@ client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 1
   v = 6.5
-  d = 86
+  d = 89
 });
 const prefix = "=";
 client.on("message", (message) => {
@@ -18,7 +18,7 @@ if (x % 200 == 0) {
   if (x % 23 == 0) {
     message.react("💎")
  }else
-   if (x % 10 == 0) {
+   if (x % 888 == 0) {
      message.react("🎉")
      message.author.send(":tada: Congrats! You have won a Vires Esports Discord Steam Key Giveaway! :tada:")
      message.channel.send(":tada: Winner! :tada:")
