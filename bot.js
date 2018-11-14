@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
-  x = 0
+  x = 1
   v = 6.5
   d = 86
 });
@@ -17,7 +17,7 @@ if (x % 200 == 0) {
   x = x + 1
   if (x % 23 == 0) {
     message.react("💎")
-  }else
+ }else
    if (x % 10 == 0) {
      message.react("🎉")
      message.author.send(":tada: Congrats! You have won a Vires Esports Discord Steam Key Giveaway! :tada:")
