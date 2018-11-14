@@ -3,15 +3,15 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 6.4
-  d = 85
+  v = 6.5
+  d = 86
 });
 const prefix = "=";
 client.on("message", (message) => {
 function react() {
   message.react("🔽")
 }
-if (x % 200) {
+if (x % 200 == 0) {
   message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
 }else
   x = x + 1
@@ -79,7 +79,7 @@ if (x % 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Changed the Presence \n \n Added random giveaways! \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Jam became more competent in coding \n \n Made presence rarer \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Changed the Presence \n \n Added random giveaways! \n \n STOPED THIS BOT FROM SPAMMING JAM PLEASE LEARN HOW TO CODE THX \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Jam became more competent in coding \n \n Made presence rarer \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
