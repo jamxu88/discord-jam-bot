@@ -3,21 +3,29 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 0
-  v = 6.3
-  d = 84
+  v = 6.4
+  d = 85
 });
 const prefix = "=";
 client.on("message", (message) => {
 function react() {
   message.react("🔽")
 }
-if (x == 200) {
+if (x % 200) {
   message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
-  x = 0
 }else
   x = x + 1
   if (x % 23 == 0) {
     message.react("💎")
+  }else
+   if (x % 10 == 0) {
+     message.react("🎉")
+     message.author.send(":tada: Congrats! You have won a Vires Esports Discord Steam Key Giveaway! :tada:")
+     message.channel.send(":tada: Winner! :tada:")
+     client.channels.get("471805062222446604").send({embed: {
+        color: 16753920,
+        description: ":tada: User " + message.author.toString() + ", has just won a random giveaway! :tada:"
+      }});
   }else
   if (message.content.startsWith(".")) {
     setTimeout(react, 500);
@@ -71,7 +79,7 @@ if (x == 200) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Changed the Presence \n \n Changed embed colors to white. \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Jam became more competent in coding \n \n Made presence rarer \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Changed the Presence \n \n Added random giveaways! \n \n Made the code simpler \n \n Jam Bot Presence :thinking: \n \n Changed the `=help` command. \n \n Added `=ad` \n \n Added rating system. More in `=help` \n \n Jam became more competent in coding \n \n Made presence rarer \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
