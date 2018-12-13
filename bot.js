@@ -12,11 +12,11 @@ function react() {
   message.react("🔽")
 }
 if (x % 200 == 0) {
-  message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports> \n `Jam's Steam Profile` - <https://steamcommunity.com/id/jaaaaaaaam> \n `Spig's Steam Profile` - <https://steamcommunity.com/id/RavenPotato> \n `Gold's Steam Profile` - <https://steamcommunity.com/id/VS2TGOLD>");
+  message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports>");
   x = x + 1
 }else
   x = x + 1
-  if (x % 23 == 0) {
+  if (x % 55 == 0) {
     message.react("💎")
  }else
    if (x % 888 == 0) {
