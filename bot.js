@@ -3,15 +3,12 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 1
-  v = 6.5
-  d = 90
+  v = 7.0
+  d = 93
 });
 const prefix = "=";
 client.on("message", (message) => {
-function react() {
-  message.react("🔽")
-}
-if (x % 200 == 0) {
+if (x % 1000 == 0) {
   message.channel.send("`Hey! Support our Discord by checking out our stuff:` \n **Our Partners**: \n `Discord Ads` - <https://discord.gg/48axjnP> \n `Naihvoom40` - <https://www.twitch.tv/naihvoom40> \n `Idle-Empire` - <https://www.idle-empire.com/r/discord> \n `Heroku` - <http://heroku.com> \n **Our Media**: \n `Instagram` - <https://www.instagram.com/vires.esports/> \n `Twitter` - <https://twitter.com/ViresEsports> \n `Steam Group` - <https://steamcommunity.com/groups/viresesports>");
   x = x + 1
 }else
@@ -28,10 +25,6 @@ if (x % 200 == 0) {
         description: ":tada: User " + message.author.toString() + ", has just won a random giveaway! :tada:"
       }});
      x = x + 1
-  }else
-  if (message.content.startsWith(".")) {
-    setTimeout(react, 500);
-    message.react("🔼")
   }else
   if (!message.content.startsWith(prefix)) return;
   if (!message.content.startsWith(prefix) || message.author.bot) return;
