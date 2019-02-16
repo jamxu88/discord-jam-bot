@@ -3,8 +3,8 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("Jam-Bot Online");
   x = 1
-  v = 7.0
-  d = 94
+  v = 7.1
+  d = 95
 });
 const prefix = "=";
 client.on("message", (message) => {
@@ -74,7 +74,7 @@ if (x % 1000 == 0) {
       message.channel.send("This bot is on Version `" + v + "`. `x` is equal to `" + x + "`");
       message.channel.send({embed: {
         color: 16777215,
-        description: "**Recent Changes**: \n \n Edited Some information, removed a command. (v94) \n \n `redeployed for v" + d + "`"
+        description: "**Recent Changes**: \n \n Edited Some information, removed a command. (v94) \n \n Minor Bug Fixes (v95) \n \n `redeployed for v" + d + "`"
       }});
     }else
     if (message.content.startsWith(prefix + "github")) {
